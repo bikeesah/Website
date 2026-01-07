@@ -1,7 +1,106 @@
-h1{
-    text-justify: auto;
-    background:rebeccapurple;
+* {
+    margin: .5px;
+    padding: .5px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
-.nav{
-    background-color: antiquewhite;
+
+body {
+    background-color: #f4f4f4;
+}
+
+/* Navbar */
+.navbar {
+    height: 70px;
+    background-color: #1e293b;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+/* Logo */
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    position: relative;
+}
+
+/* Hover Effect */
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #38bdf8;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* Profile */
+.profile {
+    background-color: #38bdf8;
+    padding: 8px 16px;
+    border-radius: 20px;
+    color: #1e293b;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.profile:hover {
+    background-color: #0ea5e9;
+}
+
+.main{
+    display: flex;
+    background-color: blanchedalmond;
+    padding: 10px 60px;
+    height:inherit;
+    align-items: center;
+    gap: 10px;
+   transition:2s;
+    
+}
+.main :hover{
+    background-color: gold;
+    transform: rotate(5deg);
+}
+.main h1{
+    font-size: 60px;
+}
+
+.service{
+    display: flex;
+    background-color: #d2ecbc;
+    gap: 30px;
+    padding: 60px 100px;
+    text-align: center;
+
+}
+
+.footer{
+    display: flex;
+    background-color: aquamarine;
+    padding: 40px;
+    justify-items:center;
 }
