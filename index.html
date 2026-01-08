@@ -1,83 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
 
-    <title>Chanjla</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-</head>
-<body>
+    <title>website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
     <header>
-    <nav class="navbar">
+      <nav class="navbar">
         <!-- Left -->
-        <div class="logo">LOGO</div>
+        <div class="logo">Logo</div>
 
         <!-- Center -->
         <div class="nav-links">
-            <a href="#">Home</a>
-            <a href="#">Service</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
+          <a href="#">Home</a>
+          <a href="#">Service</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
         </div>
 
         <!-- Right -->
         <div class="profile">User Profile</div>
-    </nav>
+      </nav>
     </header>
 
     <main>
-        <section>
-            <div class="main">
-                <div>
-                    <h1>This is a new site.</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem debitis eaque, recusandae illo animi doloribus, laborum repudiandae, molestias accusantium quam minima? Consequuntur ullam ex magnam dolorem vero optio ratione ipsa! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem debitis eaque, recusandae illo animi doloribus, laborum repudiandae, molestias accusantium quam minima? Consequuntur ullam ex magnam dolorem vero optio ratione ipsa!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem debitis eaque, recusandae illo animi doloribus, laborum repudiandae, molestias accusantium quam minima? Consequuntur ullam ex magnam dolorem vero optio ratione ipsa! </p>
-                    <button>Click here.</button>
-                </div>
-                <div>
-                    <img src="https://picsum.photos/200/300" alt="LoremPic">
-                </div>
-            </div>
-        </section>
-        <!-- Service -->
-        <section>
-            <div class="service">
-                <div>
-                    <i class="fa-solid fa-globe-pointer"></i>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam maxime itaque architecto sit pariatur, cumque explicabo rem quo aliquam consequatur optio recusandae perspiciatis tenetur ipsa qui similique est. At, voluptatem?</p>
-                </div>
-                <div>
-                    <i class="fa-solid fa-globe-pointer"></i>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam maxime itaque architecto sit pariatur, cumque explicabo rem quo aliquam consequatur optio recusandae perspiciatis tenetur ipsa qui similique est. At, voluptatem?</p>
-                </div>
-                <div>
-                    <i class="fa-solid fa-globe-pointer"></i>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam maxime itaque architecto sit pariatur, cumque explicabo rem quo aliquam consequatur optio recusandae perspiciatis tenetur ipsa qui similique est. At, voluptatem?</p>
-                </div>
-                <div></div>
-            </div>
+      <section>
+        <div class="main">
+          <div>
+            <h1>This is a new site.</h1>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem
+              debitis eaque, recusandae illo animi doloribus, laborum
+              repudiandae, molestias accusantium quam minima? Consequuntur ullam
+              ex magnam dolorem vero optio ratione ipsa! Lorem ipsum, dolor sit
+              amet consectetur adipisicing elit. Autem debitis eaque, recusandae
+              illo animi doloribus, laborum repudiandae, molestias accusantium
+              quam minima? Consequuntur ullam ex magnam dolorem vero optio
+              ratione ipsa!Lorem ipsum, dolor sit amet consectetur adipisicing
+              elit. Autem debitis eaque, recusandae illo animi doloribus,
+              laborum repudiandae, molestias accusantium quam minima?
+              Consequuntur ullam ex magnam dolorem vero optio ratione ipsa!
+            </p>
+            <p id="moreText" style="display: none">
+              This is extra content shown after clicking the button. Lorem ipsum
+              dolor sit amet consectetur adipisicing elit.
+            </p>
 
-        </section>
+            <button id="btn">More...</button>
+          </div>
+          <div>
+            <img src="images/profile.jpg" alt="LoremPic" />
+            <!-- https://picsum.photos/200/300 -->
+          </div>
+        </div>
+      </section>
+      <!-- Service -->
+      <section class="services-section">
+        <div class="service">
+          <div class="servicebox1">
+            <img src="https://picsum.photos/200/300" alt="service" />
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam
+              maxime itaque architecto sit pariatur, cumque explicabo rem quo
+              aliquam consequatur optio recusandae perspiciatis tenetur ipsa qui
+              similique est. At, voluptatem?
+            </p>
+          </div>
+          <div class="servicebox2">
+            <img src="https://picsum.photos/200/300" alt="service" />
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam
+              maxime itaque architecto sit pariatur, cumque explicabo rem quo
+              aliquam consequatur optio recusandae perspiciatis tenetur ipsa qui
+              similique est. At, voluptatem?
+            </p>
+          </div>
+          <div class="servicebox3">
+            <img src="https://picsum.photos/200/300" alt="service" />
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam
+              maxime itaque architecto sit pariatur, cumque explicabo rem quo
+              aliquam consequatur optio recusandae perspiciatis tenetur ipsa qui
+              similique est. At, voluptatem?
+            </p>
+          </div>
+          <div class="servicebox4">
+            <img src="images/service.png" alt="service" />
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam
+              maxime itaque architecto sit pariatur, cumque explicabo rem quo
+              aliquam consequatur optio recusandae perspiciatis tenetur ipsa qui
+              similique est. At, voluptatem?
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
 
-
     <footer>
-        <div class="footer">
-            <div>
-                <h3>Footer header</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum temporibus neque sequi, voluptatem numquam rerum ipsam odio quas perferendis harum explicabo incidunt eaque. Labore aut possimus inventore sed maxime qui?</p>
-            </div>
-            <div>
-                <h3>Footer header</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum temporibus neque sequi, voluptatem numquam rerum ipsam odio quas perferendis harum explicabo incidunt eaque. Labore aut possimus inventore sed maxime qui?</p>
-            </div>
-            <div>
-                <h3>Footer header</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum temporibus neque sequi, voluptatem numquam rerum ipsam odio quas perferendis harum explicabo incidunt eaque. Labore aut possimus inventore sed maxime qui?</p>
-            </div>
+      <div class="footer">
+        <div>
+          <h3>Footer header</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum
+            temporibus neque sequi, voluptatem numquam rerum ipsam odio quas
+            perferendis harum explicabo incidunt eaque. Labore aut possimus
+            inventore sed maxime qui?
+          </p>
         </div>
+        <div>
+          <h3>Footer header</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum
+            temporibus neque sequi, voluptatem numquam rerum ipsam odio quas
+            perferendis harum explicabo incidunt eaque. Labore aut possimus
+            inventore sed maxime qui?
+          </p>
+        </div>
+        <div>
+          <h3>Footer header</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum
+            temporibus neque sequi, voluptatem numquam rerum ipsam odio quas
+            perferendis harum explicabo incidunt eaque. Labore aut possimus
+            inventore sed maxime qui?
+          </p>
+        </div>
+      </div>
     </footer>
-</body>
+
+    <script src="app.js"></script>
+  </body>
 </html>
