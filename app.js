@@ -9,4 +9,5 @@ bttn.onclick = function () {
         moreText.style.display = "none";
         bttn.innerText = "Show More";
     }
+
 };
