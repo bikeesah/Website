@@ -219,9 +219,113 @@ main {
     }
 }
 
-.footer{
+/* ===== Footer Base ===== */
+footer {
+    background: linear-gradient(135deg, #0f172a, #020617);
+    color: #e5e7eb;
+    padding: 70px 10% 20px;
+    margin-top: 60px;
+}
+
+/* ===== Footer Grid ===== */
+.footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+/* ===== Footer Box ===== */
+.footer-box {
+    transition: 0.3s ease;
+}
+
+.footer-box h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #facc15;
+    position: relative;
+}
+
+/* Underline Effect */
+.footer-box h3::after {
+    content: "";
+    width: 50px;
+    height: 3px;
+    background: #facc15;
+    display: block;
+    margin-top: 8px;
+    border-radius: 10px;
+}
+
+/* Footer Text */
+.footer-box p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #cbd5e1;
+}
+
+/* Hover Lift Effect */
+.footer-box:hover {
+    transform: translateY(-8px);
+}
+
+/* ===== Footer Bottom ===== */
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    padding-top: 20px;
     display: flex;
-    background-color: aquamarine;
-    padding: 40px;
-    justify-items:center;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* Copyright */
+.footer-bottom p {
+    font-size: 14px;
+    color: #94a3b8;
+}
+
+/* ===== Social Icons ===== */
+.social-icons a {
+    text-decoration: none;
+    color: #e5e7eb;
+    margin-left: 15px;
+    font-size: 14px;
+    padding: 6px 14px;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.2);
+    transition: 0.3s ease;
+}
+
+/* Social Hover */
+.social-icons a:hover {
+    background-color: #facc15;
+    color: #020617;
+    border-color: #facc15;
+}
+
+/* ===== Responsive Footer ===== */
+@media (max-width: 768px) {
+    footer {
+        padding: 50px 6% 20px;
+    }
+
+    .footer {
+        text-align: center;
+    }
+
+    .footer-box h3::after {
+        margin: 8px auto;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .social-icons a {
+        margin: 5px;
+    }
 }
